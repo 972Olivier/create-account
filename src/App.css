@@ -1,38 +1,121 @@
-.App {
+/*-------------------generals rules-------*/
+header,
+main,
+footer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 26.7px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*----------------header--------*/
+header {
   display: flex;
-  flex-direction: column;
+  height: 20vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* border: solid black 1px; */
+}
+/*-------------main-------------*/
+form,
+.box1,
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  /* border: solid black 1px; */
+  height: 60vh;
+  align-items: center;
+}
+.box1 {
+  /* border: solid 1px black; */
+  height: 100%;
+  width: 305px;
+  justify-content: space-around;
+}
+.box1 button {
   color: white;
+  font-size: 16px;
+  height: 45px;
+  background-color: #5c47d3;
+  border-radius: 5px;
+}
+.containPassIcon {
+  position: relative;
+}
+.icon {
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+label {
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 10px;
+  text-align: start;
+}
+input {
+  height: 45px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px gray solid;
+  background-color: #fcf9f9;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+.box2 {
+  /* border: black 1px solid; */
+  width: 310px;
+  height: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+.box2 div {
+  width: 310px;
+  height: 150px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  text-align: start;
+  background-color: #f2f2f2;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+}
+.box2 button {
+  color: white;
+  font-size: 16px;
+  height: 45px;
+  width: 250px;
+  background-color: #5c47d3;
+  border-radius: 5px;
+}
+.passError {
+  border: red 2px solid;
 }
 
-.App-link {
-  color: #61dafb;
+/*----------------------footer----------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  font-weight: bold;
 }
